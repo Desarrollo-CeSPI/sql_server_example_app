@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%=t "activerecord.attributes.person.first_name"%>:</b>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <b><%=t "activerecord.attributes.person.last_name"%>:</b>
+  <%= @person.last_name %>
+</p>
+
+<p>
+  <b><%=t "activerecord.attributes.person.birthdate"%>:</b>
+  <%= @person.localized_birthdate %>
+</p>
+
+<p>
+  <b><%=t "activerecord.attributes.person.saldo"%>:</b>
+  <%= @person.localized_saldo %>
+</p>
+
+<p>
+  <b><%=t "activerecord.attributes.person.email"%>:</b>
+  <%= @person.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

@@ -1,0 +1,40 @@
+# encoding: utf-8
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  hello: "Hola Mundo!"
+  
+  date:
+    formats:
+      default: "%d/%m/%Y"
+
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M:%S"
+
+  number:
+    format:
+      separator: ','
+      delimiter: '.'
+      precision: 2
+  
+  activerecord:
+      models:
+        person: Persona
+        person_listing: Listado de personas
+        post: Publicación
+        post_listing: Listado de publicaciones
+      attributes:
+        person:
+          birthdate: Fecha de cumpleaños
+          saldo: Saldo
+          first_name: Nombre
+          last_name: Apellido
+          email: Correo electronico
+        post:
+          title: Título
+          content: Contenido
+          person: Creador
+          publishing_date: Fecha de publicación
+          image: Imagen
