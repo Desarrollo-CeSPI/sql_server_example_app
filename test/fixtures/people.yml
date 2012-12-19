@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  first_name: MyString
-  last_name: MyString
+pato_maxawen:
+  first_name: Pato
+  last_name: Maxawen
   birthdate: 2012-12-18
-  email: MyString
+  email: patito@maxawenapower.com
 
-two:
-  first_name: MyString
-  last_name: MyString
+guiman_laba:
+  first_name: Guiman
+  last_name: Laba
   birthdate: 2012-12-18
-  email: MyString
+  email: laba@volcano.com

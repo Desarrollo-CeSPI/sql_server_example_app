@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20121218170058) do
   create_table "people", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.datetime "birthdate"
+    t.date     "birthdate"
     t.string   "email"
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
@@ -34,5 +34,7 @@ ActiveRecord::Schema.define(:version => 20121218170058) do
   end
 
   add_index "posts", ["person_id"], :name => "index_posts_on_person_id"
+
+  add_foreign_key "posts", "people", :name => "posts_person_id_fk", :dependent => :delete
 
 end

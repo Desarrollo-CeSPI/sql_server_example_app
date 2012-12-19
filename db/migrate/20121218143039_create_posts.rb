@@ -8,7 +8,13 @@ class CreatePosts < ActiveRecord::Migration
 
       t.timestamps
     end
+    
     add_index :posts, :person_id
-    execute "ALTER TABLE dbo.posts ADD CONSTRAINT FK_posts_people_cascade_delete FOREIGN KEY (person_id) REFERENCES dbo.people(id) ON DELETE CASCADE"
+    
+    if ActiveRecord::Base.connection.adapter_name == 'Mysql2'
+      add_foreign_key(:posts, :people, dependent: :delete)
+    else
+      execute "ALTER TABLE dbo.posts ADD CONSTRAINT FK_posts_people_cascade_delete FOREIGN KEY (person_id) REFERENCES dbo.people(id) ON DELETE CASCADE"
+    end
   end
 end

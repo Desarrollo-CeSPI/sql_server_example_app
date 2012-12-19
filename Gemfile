@@ -23,6 +23,8 @@ gem 'jquery-rails'
 # database connection
 gem 'tiny_tds'
 gem 'activerecord-sqlserver-adapter', :require => false
+gem 'mysql2'
+gem 'foreigner'
 
 # internationalization
 gem 'i18n_alchemy'

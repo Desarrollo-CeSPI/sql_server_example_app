@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
-  content: MyText
+  title: La mierda que hace calor en un volcan
+  content: Lalalalalalalala
   publishing_date: 2012-12-18 11:30:39
-  creator: 
+  person: guiman_laba
 
 two:
-  title: MyString
-  content: MyText
+  title: Soy irlandes
+  content: Pero me emborracho igual
   publishing_date: 2012-12-18 11:30:39
-  creator: 
+  person: pato_maxawen
