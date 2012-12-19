@@ -1,6 +1,6 @@
 <h1><%=t "activerecord.models.post_listing"%></h1>
 
-<table>
+<table class="table table-condensed">
   <tr>
     <th><%=t "activerecord.attributes.post.title" %></th>
     <th><%=t "activerecord.attributes.post.content" %></th>
@@ -27,5 +27,5 @@
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to t('activerecord.actions.posts.new_post'), new_post_path, class: "btn btn-small" %>
 <%= paginate @posts %>

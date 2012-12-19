@@ -20,21 +20,26 @@ es:
       precision: 2
   
   activerecord:
-      models:
-        person: Persona
-        person_listing: Listado de personas
-        post: Publicación
-        post_listing: Listado de publicaciones
-      attributes:
-        person:
-          birthdate: Fecha de cumpleaños
-          saldo: Saldo
-          first_name: Nombre
-          last_name: Apellido
-          email: Correo electronico
-        post:
-          title: Título
-          content: Contenido
-          person: Creador
-          publishing_date: Fecha de publicación
-          image: Imagen
+    models:
+      person: Persona
+      person_listing: Listado de personas
+      post: Publicación
+      post_listing: Listado de publicaciones
+    attributes:
+      person:
+        birthdate: Fecha de cumpleaños
+        saldo: Saldo
+        first_name: Nombre
+        last_name: Apellido
+        email: Correo electronico
+      post:
+        title: Título
+        content: Contenido
+        person: Creador
+        publishing_date: Fecha de publicación
+        image: Imagen
+    actions:
+      people:
+        new_person: Crear persona
+      posts:
+        new_post: Crear publicación

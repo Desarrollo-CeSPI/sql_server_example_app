@@ -1,6 +1,6 @@
 <h1><%=t "activerecord.models.person_listing"%></h1>
 
-<table>
+<table class="table table-condensed">
   <tr>
     <th><%=t "activerecord.attributes.person.first_name" %></th>
     <th><%=t "activerecord.attributes.person.last_name" %></th>
@@ -28,4 +28,4 @@
 
 <br />
 
-<%= link_to 'New Person', new_person_path %>
+<%= link_to t('activerecord.actions.people.new_person'), new_person_path, class: "btn bt-small" %>
