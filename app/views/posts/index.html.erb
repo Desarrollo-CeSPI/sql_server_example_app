@@ -18,9 +18,9 @@
     <td><%= truncate post.content, length: 100 %></td>
     <td><%= post.localized_publishing_date %></td>
     <td><%= post.person %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to t("views.common.actions.show"), post %></td>
+    <td><%= link_to t("views.common.actions.edit"), edit_post_path(post) %></td>
+    <td><%= link_to t("views.common.actions.destroy"), post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
